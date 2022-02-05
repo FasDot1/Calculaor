@@ -57,6 +57,12 @@ public class Calcula {
 		frame.getContentPane().add(btnBackSpace);
 		
 		JButton btn7 = new JButton("7");
+		btn7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btn7.getText();
+				textField_1.setText(number);
+			}
+		});
 		btn7.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn7.setBounds(10, 182, 66, 59);
 		frame.getContentPane().add(btn7);
@@ -94,6 +100,12 @@ public class Calcula {
 		frame.getContentPane().add(btnCancel);
 		
 		JButton btn8 = new JButton("8");
+		btn8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btn8.getText();
+				textField_1.setText(number);
+			}
+		});
 		btn8.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn8.setBounds(80, 182, 66, 59);
 		frame.getContentPane().add(btn8);
@@ -131,6 +143,12 @@ public class Calcula {
 		frame.getContentPane().add(btn00);
 		
 		btn9 = new JButton("9");
+		btn9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btn9.getText();
+				textField_1.setText(number);
+			}
+		});
 		btn9.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btn9.setBounds(148, 182, 66, 59);
 		frame.getContentPane().add(btn9);
@@ -138,6 +156,8 @@ public class Calcula {
 		JButton btn6 = new JButton("6");
 		btn6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btn6.getText();
+				textField_1.setText(number);
 				
 			}
 		});
